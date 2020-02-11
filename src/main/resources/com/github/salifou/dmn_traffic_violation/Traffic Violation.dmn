@@ -42,18 +42,15 @@
   </dmn:itemDefinition>
   <dmn:decision id="_0633E364-237E-4DC9-9364-759D561F42BB" name="Fine">
     <dmn:extensionElements/>
-    <dmn:variable id="_95B5FDF8-F5D2-45F1-993C-7E7A375E8658" name="Fine"/>
+    <dmn:variable id="_95B5FDF8-F5D2-45F1-993C-7E7A375E8658" name="Fine" typeRef="tFine"/>
     <dmn:informationRequirement id="_9A02A664-5B70-4BBB-A951-AC736D2F8011">
       <dmn:requiredInput href="#_3D9AFE63-38E0-47BF-8139-ABB3BFE77965"/>
-    </dmn:informationRequirement>
-    <dmn:informationRequirement id="_1520977F-8907-48B0-B888-C12A74D26381">
-      <dmn:requiredInput href="#_CCD2D6B3-CB04-4D69-90BF-04019DB6CB1A"/>
     </dmn:informationRequirement>
     <dmn:literalExpression/>
   </dmn:decision>
   <dmn:inputData id="_CCD2D6B3-CB04-4D69-90BF-04019DB6CB1A" name="Driver">
     <dmn:extensionElements/>
-    <dmn:variable id="_C50968A9-872E-41BE-A71B-5CE21B52D468" name="Driver"/>
+    <dmn:variable id="_C50968A9-872E-41BE-A71B-5CE21B52D468" name="Driver" typeRef="tDriver"/>
   </dmn:inputData>
   <dmn:decision id="_33BFC8B2-D9B3-4882-B5E9-D82159E53373" name="Should the driver be suspended?">
     <dmn:extensionElements/>
@@ -68,7 +65,7 @@
   </dmn:decision>
   <dmn:inputData id="_3D9AFE63-38E0-47BF-8139-ABB3BFE77965" name="Violation">
     <dmn:extensionElements/>
-    <dmn:variable id="_AD83C845-B3C1-49BF-9DD0-3ACFAC91E3C1" name="Violation"/>
+    <dmn:variable id="_AD83C845-B3C1-49BF-9DD0-3ACFAC91E3C1" name="Violation" typeRef="tViolation"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
@@ -108,7 +105,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="384" y="315" width="100" height="50"/>
+        <dc:Bounds x="438" y="321" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_4B655357-FF98-4B2B-8719-9C4311A0C7A0" dmnElementRef="_4B655357-FF98-4B2B-8719-9C4311A0C7A0">
@@ -116,16 +113,12 @@
         <di:waypoint x="352" y="236"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_1226DB6A-ADC2-4EBB-BFB7-029C4677B7D6" dmnElementRef="_1226DB6A-ADC2-4EBB-BFB7-029C4677B7D6">
-        <di:waypoint x="434" y="315"/>
+        <di:waypoint x="488" y="321"/>
         <di:waypoint x="352" y="236"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_9A02A664-5B70-4BBB-A951-AC736D2F8011" dmnElementRef="_9A02A664-5B70-4BBB-A951-AC736D2F8011">
         <di:waypoint x="537" y="469"/>
-        <di:waypoint x="384" y="340"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_1520977F-8907-48B0-B888-C12A74D26381" dmnElementRef="_1520977F-8907-48B0-B888-C12A74D26381">
-        <di:waypoint x="339" y="444"/>
-        <di:waypoint x="434" y="365"/>
+        <di:waypoint x="438" y="346"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
