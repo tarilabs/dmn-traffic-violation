@@ -19,18 +19,18 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_D8EA641D-173C-4798-BB88-616B9274F3E5" name="tViolation" isCollection="false">
-    <dmn:itemComponent id="_326D3138-3B02-4A68-9F1F-F6DDDCC02342" name="Code" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_DAA1F56D-8F04-44E9-A194-4E6CCAF1B177" name="Date" isCollection="false">
-      <dmn:typeRef>date</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_46A6D89C-16AB-4E2E-B3DD-C84E51D420AA" name="Type" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_D62FF430-CC89-463C-AC94-5E40AB2485C6" name="Speed Limit" isCollection="false">
+    <dmn:itemComponent id="_D46958D1-D1B3-4430-AE32-F31760822526" name="Actual Speed" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
+    <dmn:itemComponent id="_4D96D522-BC7C-496E-B45B-5AB07E39E9CD" name="Code" isCollection="false"/>
+    <dmn:itemComponent id="_DAA1F56D-8F04-44E9-A194-4E6CCAF1B177" name="Date" isCollection="false"/>
+    <dmn:itemComponent id="_46A6D89C-16AB-4E2E-B3DD-C84E51D420AA" name="Type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_71221B92-2D72-4850-A5BD-2BAF2C471AF1">
+        <dmn:text>"speed", "parking", "driving under the influence"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D62FF430-CC89-463C-AC94-5E40AB2485C6" name="Speed Limit" isCollection="false"/>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_BD79B22E-7C68-49E6-AC8C-3CC34296493E" name="tFine" isCollection="false">
     <dmn:itemComponent id="_7FD281EB-E223-4375-B1A9-875FC8F63F63" name="Amount" isCollection="false">
