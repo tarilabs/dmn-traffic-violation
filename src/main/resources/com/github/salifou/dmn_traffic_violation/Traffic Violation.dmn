@@ -14,7 +14,7 @@
     <dmn:itemComponent id="_BB3CA553-FF4A-4AE1-BABC-61F45F24ED38" name="City" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_EB10C87A-32B3-4678-B610-5EB10134B4AD" name="Point" isCollection="false">
+    <dmn:itemComponent id="_EB10C87A-32B3-4678-B610-5EB10134B4AD" name="Points" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
