@@ -138,7 +138,19 @@
     <dmn:informationRequirement id="_1226DB6A-ADC2-4EBB-BFB7-029C4677B7D6">
       <dmn:requiredDecision href="#_0633E364-237E-4DC9-9364-759D561F42BB"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:context id="_EEA3A542-BC28-475B-8F54-1D15A87AA1AF">
+      <dmn:contextEntry>
+        <dmn:variable id="_B653E17B-26D5-4081-B102-37B65FDDD3D4" name="Total Points" typeRef="number"/>
+        <dmn:literalExpression id="_7231A851-EAA5-4064-98B3-689DFEDB2916">
+          <dmn:text>Driver.Points + Fine.Points</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:literalExpression id="_0BA460CF-F66F-4318-B46F-9D810A50D04E">
+          <dmn:text>if Total Points >= 20 then "Yes" else "No"</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+    </dmn:context>
   </dmn:decision>
   <dmn:inputData id="_3D9AFE63-38E0-47BF-8139-ABB3BFE77965" name="Violation">
     <dmn:extensionElements/>
@@ -148,6 +160,17 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_EEA3A542-BC28-475B-8F54-1D15A87AA1AF">
+            <kie:width>50.0</kie:width>
+            <kie:width>123.0</kie:width>
+            <kie:width>366.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_7231A851-EAA5-4064-98B3-689DFEDB2916">
+            <kie:width>366.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_0BA460CF-F66F-4318-B46F-9D810A50D04E">
+            <kie:width>366.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F1E9CB95-150C-41C2-BD45-41401591BF95">
             <kie:width>50.0</kie:width>
             <kie:width>250.0</kie:width>
@@ -191,7 +214,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="438" y="321" width="100" height="50"/>
+        <dc:Bounds x="437" y="321" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_4B655357-FF98-4B2B-8719-9C4311A0C7A0" dmnElementRef="_4B655357-FF98-4B2B-8719-9C4311A0C7A0">
@@ -199,12 +222,12 @@
         <di:waypoint x="352" y="236"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_1226DB6A-ADC2-4EBB-BFB7-029C4677B7D6" dmnElementRef="_1226DB6A-ADC2-4EBB-BFB7-029C4677B7D6">
-        <di:waypoint x="488" y="321"/>
+        <di:waypoint x="487" y="321"/>
         <di:waypoint x="352" y="236"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_9A02A664-5B70-4BBB-A951-AC736D2F8011" dmnElementRef="_9A02A664-5B70-4BBB-A951-AC736D2F8011">
         <di:waypoint x="537" y="469"/>
-        <di:waypoint x="438" y="346"/>
+        <di:waypoint x="437" y="346"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
